@@ -22,11 +22,6 @@
         <input type="button" onclick="checkGuess()" value="Check the guess">
     </form>
     <p id="result">Counter text will be displayed here !!! </p><br>
-    <div class="container">
-        <img src="netwing.jpg" id="image" onclick="swapImage()" alt="Viceroy" style="width: 100px;height: 100px;">
-    </div>
-
-
 
 
     <script>
@@ -49,6 +44,12 @@
                 out.innerHTML = "Correct answer: " + correct + " Wrong answer: " + wrong
             }
         }
+    </script>
+    <div class="container">
+        <img src="netwing.jpg" id="image" onclick="swapImage()" alt="netwing" style="width: 100px;height: 100px;">
+    </div>
+
+    <script>
         function swapImage() {
             switch (useImage) {
                 case 1: useImage = useImage + 1
